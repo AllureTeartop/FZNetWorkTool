@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "TestAPI.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //使用举例
+    TestAPI *api = [[TestAPI alloc] initWithUserName:@"" PassWord:@""];
+    [api startRequestWithSuccessFn:^(id successValue) {
+        
+    } FailureFn:^(id failurValue) {
+        
+    } ErrorFn:^(id error) {
+        
+    }];
 }
 
 
