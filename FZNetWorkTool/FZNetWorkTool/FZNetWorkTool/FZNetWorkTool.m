@@ -96,17 +96,6 @@ static NSString *HTTPURL = @"http://47.93.78.8:8091/";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 -(AFHTTPSessionManager*)session{
     if (!_session) {
         _session = [AFHTTPSessionManager manager];
