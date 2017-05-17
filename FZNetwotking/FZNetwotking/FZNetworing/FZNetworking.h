@@ -43,7 +43,7 @@ typedef void (^NetworkSuccessFn)(id successValue);
 /** 请求失败的Block */
 typedef void (^NetworkFailureFn)(id failurValue);
 /** 请求错误的Block */
-typedef void (^NetWorkErrorFn)(NSError *error);
+typedef void (^NetWorkErrorFn)(id errorValue);
 /** 网络请求进度的Block */
 typedef void (^NetWorkProgressFn)(NSProgress *progress);
 /** 网络请求进度的Block */
